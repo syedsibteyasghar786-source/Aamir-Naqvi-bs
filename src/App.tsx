@@ -98,6 +98,18 @@ useEffect(() => {
     // Use GSAP's class selector for desktop images
     const desktopElements = gsap.utils.toArray(".desktop-image");
 
+    // Hide desktop images when portfolio section covers the screen
+    gsap.to(desktopElements, {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: portfolioSectionRef.current,
+        start: "top bottom",
+        end: "top center",
+        scrub: 1,
+        markers: false,
+      }
+    });
+
     // Create a timeline for desktop images with scroll animation
     gsap.timeline({
       scrollTrigger: {
@@ -129,7 +141,7 @@ useEffect(() => {
       onLeaveBack: () => setShowContact(false),
     });
   }
-   
+
   return () => {
     ScrollTrigger.getAll().forEach(trigger => trigger.kill());
   };
