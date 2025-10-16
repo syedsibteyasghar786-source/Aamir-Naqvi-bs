@@ -225,12 +225,19 @@ useEffect(() => {
       </div>
 
       {/* Portfolio Section */}
-      <div 
-        ref={portfolioSectionRef} 
-        className="relative w-full bg-[#f0f0f0] z-[100] rounded-t-[3rem] rounded-b-[3rem] opacity-100"
-        style={{ 
+      <div
+        ref={portfolioSectionRef}
+        className="relative w-full bg-[#f0f0f0] z-[100] rounded-t-[3rem] rounded-b-[3rem] opacity-100 portfolio-edge-shine"
+        style={{
           minHeight: window.innerWidth < 768 ? 'calc(var(--mobile-vh) * 100)' : '100vh',
-          zIndex: 9999 
+          zIndex: 9999,
+          boxShadow: `
+            0 -20px 60px -15px rgba(255, 255, 255, 0.8),
+            0 -40px 100px -20px rgba(255, 255, 255, 0.5),
+            inset 0 1px 0 0 rgba(255, 255, 255, 0.9),
+            0 20px 60px -15px rgba(0, 0, 0, 0.3),
+            0 40px 100px -20px rgba(0, 0, 0, 0.2)
+          `
         }}
       >
 
