@@ -101,9 +101,9 @@ useEffect(() => {
     const desktopElements = gsap.utils.toArray(".desktop-image");
 const mobileElements = gsap.utils.toArray(".mobile-image");
     // Hide desktop images when portfolio section covers the screen
-    gsap.to(desktopElements,mobileElements) {
+    gsap.to(desktopElements, {
       opacity: 0,
-      scrollTrigger: {
+      scrollTrigger: { 
         trigger: portfolioSectionRef.current,
         start: "top top",
         end: "top center",
