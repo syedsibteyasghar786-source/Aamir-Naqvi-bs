@@ -99,7 +99,7 @@ useEffect(() => {
   if (!isMobile() && portfolioSectionRef.current) {
     // Use GSAP's class selector for desktop images
     const desktopElements = gsap.utils.toArray(".desktop-image");
-
+const mobileElements = gsap.utils.toArray(".desktop-image");
     // Hide desktop images when portfolio section covers the screen
     gsap.to(desktopElements, {
       opacity: 0,
@@ -108,7 +108,6 @@ useEffect(() => {
         start: "top top",
         end: "top center",
         scrub: 0,
-        markers: false,
       }
     });
 
@@ -203,7 +202,7 @@ useEffect(() => {
             <div
               key={index}
               ref={(el) => (mobileImagesRef.current[index] = el)}
-              className="hero-image-layer fixed inset-0 w-full h-full"
+              className="mobile-image hero-image-layer fixed inset-0 w-full h-full"
               style={{
                 zIndex: img.isStatic ? 0 : index + 10,
                 animation: img.isStatic ? 'none' : `slideUp 1s ease-out ${img.delay}s forwards`,
