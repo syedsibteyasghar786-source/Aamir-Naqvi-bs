@@ -111,6 +111,16 @@ const mobileElements = gsap.utils.toArray(".mobile-image");
       }
     });
 
+gsap.to(mobileElements, {
+      opacity: 0,
+      scrollTrigger: { 
+        trigger: portfolioSectionRef.current,
+        start: "top top",
+        end: "top center",
+        scrub: 0,
+      }
+    });
+    
     // Create a timeline for desktop images with scroll animation
     gsap.timeline({
       scrollTrigger: {
