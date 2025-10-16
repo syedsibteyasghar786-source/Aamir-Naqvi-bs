@@ -103,7 +103,7 @@ useEffect(() => {
       opacity: 0,
       scrollTrigger: {
         trigger: portfolioSectionRef.current,
-        start: "top bottom",
+        start: "top top",
         end: "top center",
         scrub: 1,
         markers: false,
