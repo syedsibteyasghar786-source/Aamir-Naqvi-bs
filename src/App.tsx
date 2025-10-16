@@ -225,7 +225,7 @@ useEffect(() => {
             <div
               key={index}
               ref={(el) => (desktopImagesRef.current[index] = el)}
-              className="desktop-image hero-image-layer fixed inset-0 w-full h-full"
+              className="desktop-image hero-image-layer fixed inset-0 w-full h-full overflow-hidden"
               style={{
                 zIndex: img.isStatic ? 0 : index + 10,
                 animation: img.isStatic ? 'none' : `slideUp 1s ease-out ${img.delay}s forwards`,
@@ -251,22 +251,36 @@ useEffect(() => {
             bottom: window.innerWidth < 768 ? '10vh' : '5vh',
           }}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="48"
-            height="48"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="rgba(255, 255, 255, 0.9)"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+          <div
+            className="relative flex items-center justify-center"
             style={{
-              filter: 'drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4))'
+              width: '80px',
+              height: '80px',
+              background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1))',
+              borderRadius: '50%',
+              backdropFilter: 'blur(10px)',
+              boxShadow: `
+                0 8px 32px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.2),
+                0 0 0 1px rgba(255, 255, 255, 0.2)
+              `,
             }}
           >
-            <path d="M12 5v14M19 12l-7 7-7-7" />
-          </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#ffffff"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M12 5v14M19 12l-7 7-7-7" />
+            </svg>
+          </div>
         </div>
       )}
 
