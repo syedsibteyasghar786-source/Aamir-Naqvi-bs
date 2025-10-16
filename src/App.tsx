@@ -105,7 +105,7 @@ useEffect(() => {
         trigger: portfolioSectionRef.current,
         start: "top top",
         end: "top center",
-        scrub: 1,
+        scrub: 0,
         markers: false,
       }
     });
