@@ -413,6 +413,20 @@ video {
   animation-fill-mode: forwards;
 }
 
+/* Bouncing Arrow Animation */
+@keyframes bounce-arrow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce-arrow {
+  animation: bounce-arrow 2s ease-in-out infinite;
+}
+
 /* 3D Edge Shine Effect for Portfolio Section */
 @keyframes edge-shimmer {
   0%, 100% {

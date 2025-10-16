@@ -54,11 +54,13 @@ const desktopImages = [
 function App() {
   const [isLoading, setIsLoading] = React.useState(true);
   const [showContact, setShowContact] = React.useState(false);
+  const [showArrow, setShowArrow] = React.useState(true);
   const heroRef = useRef<HTMLDivElement>(null);
   const portfolioSectionRef = useRef<HTMLDivElement>(null);
   const fixedBackgroundRef = useRef<HTMLDivElement>(null);
   const mobileImagesRef = useRef<(HTMLDivElement | null)[]>([]);
   const desktopImagesRef = useRef<(HTMLDivElement | null)[]>([]);
+  const arrowRef = useRef<HTMLDivElement>(null);
   const [mobileVH, setMobileVH] = useState<number | null>(null);
 
 
@@ -131,6 +133,22 @@ useEffect(() => {
         scrub: 2,
       }
     });
+
+    // Hide arrow when portfolio section covers the screen
+    if (arrowRef.current) {
+      gsap.to(arrowRef.current, {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: portfolioSectionRef.current,
+          start: "top bottom",
+          end: "top center",
+          scrub: 1,
+          markers: false,
+          onEnter: () => setShowArrow(false),
+          onLeaveBack: () => setShowArrow(true),
+        }
+      });
+    }
 
     // Show/hide contact section
     ScrollTrigger.create({
@@ -223,6 +241,34 @@ useEffect(() => {
           ))}
         </div>
       </div>
+
+      {/* Bouncing Arrow */}
+      {showArrow && (
+        <div
+          ref={arrowRef}
+          className="fixed left-1/2 -translate-x-1/2 z-[90] bounce-arrow"
+          style={{
+            bottom: window.innerWidth < 768 ? '10vh' : '5vh',
+          }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="rgba(255, 255, 255, 0.9)"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            style={{
+              filter: 'drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4))'
+            }}
+          >
+            <path d="M12 5v14M19 12l-7 7-7-7" />
+          </svg>
+        </div>
+      )}
 
       {/* Portfolio Section */}
       <div
