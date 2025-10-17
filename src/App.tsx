@@ -381,7 +381,7 @@ gsap.to(mobileElements, {
       "https://ia600902.us.archive.org/33/items/part-1-shorts/Inkwell%20Media%20ki%20videooo.mp4",
       "https://ia801002.us.archive.org/18/items/shorts-2-part/mj%20realtyyyyy2.mp4",
       "https://dl.dropboxusercontent.com/scl/fi/fazsi0lkj5k19jh6iic3j/Inkwell-Media-ki-videooo.mp4?rlkey=xnbz8x4d9mrgwqpqoi0nqq17h&st=0za1s9l9&dl=0",
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4"
+      "https://dl.dropboxusercontent.com/scl/fi/vg857kk1uqm6jqi9awus9/mj-realtyyyyy2.mp4?rlkey=z4s649idherip1hrj4ywk3n8l&st=lwt5wlkw&dl=0"
     ].map((url, i) => (
       <VideoThumbnail
         key={i}
