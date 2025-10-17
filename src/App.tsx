@@ -349,7 +349,7 @@ gsap.to(mobileElements, {
       "https://dl.dropboxusercontent.com/scl/fi/7bwo8dc89eeqmlsv655rs/2.mp4?rlkey=2ub1x9xdq75n1hhs6tbwckq84&st=b790pngi&dl=0",
       "https://dl.dropboxusercontent.com/scl/fi/7u0swmj6jsmzrx6ag8d4h/3.mp4?rlkey=6brz1jkth5kc9nkbarvoydono&st=dufyi669&dl=0",
       "https://dl.dropboxusercontent.com/scl/fi/vqp4h38st2i2etbu07bb4/Flirting-with-women-isn-t-that-hard-v1.mp4?rlkey=ayt6iz2khevwoerrpqtvg95iu&st=28jyhqon&dl=0",
-      "https://ia600904.us.archive.org/35/items/portfolio_202508/Young%20Actresses%20Who%20Tragically%20Passed%20Away.mp4",
+      "https://dl.dropboxusercontent.com/scl/fi/xhsb2bbkj5qrawzfrju5x/4.mp4?rlkey=w7z93e20momg95hb7iysm2l4k&st=z5w5em4q&dl=0",
       "https://ia601002.us.archive.org/33/items/sample-1-1/sample1%20%281%29.mp4",
     ].map((url, i) => (
       <VideoThumbnail
