@@ -343,7 +343,7 @@ gsap.to(mobileElements, {
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
     {[
       "https://dl.dropboxusercontent.com/scl/fi/qns6c92ug9h30rm2pq0ah/Outworking-everyone-isn-t-that-hard-v1.mp4?rlkey=10rwbqrmgm8g84baccdcq8zqy&e=2&st=tn3mr5x1&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/qns6c92ug9h30rm2pq0ah/Outworking-everyone-isn-t-that-hard-v1.mp4?rlkey=10rwbqrmgm8g84baccdcq8zqy&e=2&st=tn3mr5x1&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/wxbrjspcn21e4v9jk3k4i/1.mp4?rlkey=ml7vvdqjbmpthuqjxm5d1dxkj&e=5&st=66ifnkek&dl=0",
 "https://dl.dropboxusercontent.com/scl/fi/e5igp36newl4kg60t30jo/Never-running-out-of-things-to-say-is-easy-actually-isn-t-that-hard-v1.mp4?rlkey=ibhvo5biqkxxtxnq87yz8kgre&st=t9jg3jz3&dl=0",
       "https://ia600904.us.archive.org/35/items/portfolio_202508/sample1_V1.mp4",
       "https://ia600904.us.archive.org/35/items/portfolio_202508/The%20entire%20history%20of%20Thomas%20Shelby%20v2_1.mp4",
