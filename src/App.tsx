@@ -342,7 +342,7 @@ gsap.to(mobileElements, {
   </h3>
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
     {[
-      "https://ia600904.us.archive.org/35/items/portfolio_202508/Outworking%20everyone%20isn%E2%80%99t%20that%20hard%20v1.mp4",
+      "https://dl.dropboxusercontent.com/scl/fi/qns6c92ug9h30rm2pq0ah/Outworking-everyone-isn-t-that-hard-v1.mp4?rlkey=10rwbqrmgm8g84baccdcq8zqy&e=2&st=tn3mr5x1&dl=0",
       "https://ia600904.us.archive.org/35/items/portfolio_202508/What%20is%20the%20most%20normal%20episode%20of%20Family%20Guy%20v3.mp4",
 "https://ia600904.us.archive.org/35/items/portfolio_202508/Never%20running%20out%20of%20things%20to%20say%20is%20easy%2C%20actually%20isn%27t%C2%A0that%C2%A0hard%20v1.mp4",
       "https://ia600904.us.archive.org/35/items/portfolio_202508/sample1_V1.mp4",
